@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './ProductItem.module.css'
 
 const ButtonComponent = () => {
     return (
         <>
-            <button>Click Here</button>
+            <button className={styles.buttonStyle}>Click Here</button>
         </>
     )
 }
@@ -11,6 +12,7 @@ const ButtonComponent = () => {
 const ProductItem = ({singleProduct}) => {
     return (
         <>
+            {console.log(styles)}
             <p>{singleProduct}</p>
             <ButtonComponent />
             <hr />
