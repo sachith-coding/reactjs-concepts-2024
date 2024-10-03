@@ -11,12 +11,10 @@ const ButtonComponent = () => {
 
 const ProductItem = ({singleProduct}) => {
     return (
-        <>
-            {console.log(styles)}
-            <p>{singleProduct}</p>
+        <div style={{padding: '20px', border: '2px solid red', marginBottom: '10px'}}>
+            <p className={styles.productTitle}>{singleProduct}</p>
             <ButtonComponent />
-            <hr />
-        </>
+        </div>
     )
 }
 

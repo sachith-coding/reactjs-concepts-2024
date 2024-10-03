@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <h1>ReactJS Concepts 2024</h1>
-      <ProductList listOfProducts={dummyProducts} />
+      <ProductList listOfProducts={dummyProducts} name='Sachith' city='Anuradhapura' />
     </>
   )
 }
