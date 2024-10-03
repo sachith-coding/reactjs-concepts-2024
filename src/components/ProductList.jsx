@@ -10,7 +10,7 @@ const ProductList = ({ listOfProducts }) => {
             <ul>
                 {
                     listOfProducts.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <ProductItem singleProduct={item} key={index} />
                     ))
                 }
             </ul>

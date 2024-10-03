@@ -8,11 +8,12 @@ const ButtonComponent = () => {
     )
 }
 
-const ProductItem = () => {
+const ProductItem = ({singleProduct}) => {
     return (
         <>
-            <div>ProductItem</div>
+            <p>{singleProduct}</p>
             <ButtonComponent />
+            <hr />
         </>
     )
 }
