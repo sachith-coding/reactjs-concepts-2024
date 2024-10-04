@@ -11,7 +11,7 @@ const ButtonComponent = () => {
 
 const ProductItem = ({singleProduct}) => {
     return (
-        <div style={{padding: '20px', border: '2px solid red', marginBottom: '10px'}}>
+        <div style={{padding: '20px', border: '2px solid grey', marginBottom: '10px'}}>
             <p className={styles.productTitle}>{singleProduct}</p>
             <ButtonComponent />
         </div>

@@ -1,6 +1,10 @@
 .title{
     font-size: large;
-    color: green;
+    color: black;
     font-weight: bold;
     align-items: center;
+}
+
+.buttonStyle{
+    border-color: black;
 }
