@@ -3,7 +3,12 @@ import React, { useEffect, useState } from 'react'
 const Users = () => {
 
     const [userList, setUserList] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
+
+    function handleFetchUsers()
+    {
+        fetchApiData()
+    }
 
     async function fetchApiData() {
         try
@@ -27,9 +32,9 @@ const Users = () => {
         }
     }
 
-    useEffect(() => {
-        fetchApiData()
-    }, [])
+    // useEffect(() => {
+    //     fetchApiData()
+    // }, [])
 
     if(loading)
         return (<p>Loading Data. Please wait!</p>)
@@ -37,6 +42,7 @@ const Users = () => {
     return (
         <div>
             <h2>Fetch All Users</h2>
+            <button onClick={handleFetchUsers}>Load Users</button>
             <ul>
                 {
                     userList != null && userList.length > 0 
